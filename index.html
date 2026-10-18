@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio | BCA Student</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f5f7fc;
+            color: #172554;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #172554;
+            color: white;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        header h2 {
+            color: white;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 18px;
+        }
+
+        .hero {
+            padding: 90px 8%;
+            background: white;
+        }
+
+        .hero h1 {
+            font-size: 42px;
+            margin: 12px 0;
+        }
+
+        .hero h1 span {
+            color: #2563eb;
+        }
+
+        .hero p {
+            max-width: 550px;
+            color: #475569;
+            margin-bottom: 22px;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #172554;
+            color: white;
+            padding: 11px 22px;
+            border-radius: 6px;
+            text-decoration: none;
+        }
+
+        section:not(.hero) {
+            padding: 45px 8%;
+        }
+
+        section h2 {
+            margin-bottom: 15px;
+        }
+
+        .card {
+            background: white;
+            padding: 22px;
+            margin-top: 15px;
+            border-radius: 10px;
+            border: 1px solid #e2e8f0;
+        }
+
+        footer {
+            background: #172554;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        @media (max-width: 600px) {
+            header {
+                padding: 20px 5%;
+            }
+
+            nav a {
+                margin: 0 8px 0 0;
+                display: inline-block;
+            }
+
+            .hero {
+                padding: 60px 6%;
+            }
+
+            .hero h1 {
+                font-size: 32px;
+            }
+
+            section:not(.hero) {
+                padding: 35px 6%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h2>My Portfolio</h2>
+
+        <nav>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="hero">
+            <p>BCA STUDENT | ASPIRING DEVELOPER</p>
+
+            <h1>Hello, I'm <span>Your Name</span></h1>
+
+            <p>
+                I am a BCA student learning programming
+                and web development. I enjoy solving
+                problems and creating useful projects.
+            </p>
+
+            <a class="btn" href="#projects">Explore My Projects</a>
+        </div>
+
+        <section id="about">
+            <h2>About Me</h2>
+            <div class="card">
+                <p>
+                    I am pursuing a Bachelor of Computer
+                    Applications. I am developing my
+                    technical skills and learning to
+                    build websites and software.
+                </p>
+            </div>
+        </section>
+
+        <section id="skills">
+            <h2>My Skills</h2>
+            <div class="card">
+                <p>HTML — Learning</p>
+                <p>CSS — Learning</p>
+                <p>C++ — Learning</p>
+                <p>Problem Solving — Practising</p>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2>My Projects</h2>
+            <div class="card">
+                <h3>Personal Portfolio Website</h3>
+                <p>
+                    My first portfolio website built
+                    with HTML and CSS.
+                </p>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <div class="card">
+                <p>
+                    Email: your-email@example.com
+                </p>
+                <p>
+                    GitHub:
+                    <a href="https://github.com/">
+                        Visit GitHub
+                    </a>
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 My Portfolio | Built while learning</p>
+    </footer>
+
+</body>
+</html>
